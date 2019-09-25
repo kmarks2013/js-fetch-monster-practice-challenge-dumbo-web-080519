@@ -19,15 +19,28 @@ Then run the server with
 ```bash
 json-server monsters.json
 ```
-
+ 
 ## Objectives
 
-- When the page loads, show the first 50 monsters. Each monster's name, age, and
-  description should be shown.
+<!-- - When the page loads, show the first 50 monsters. Each monster's name, age, and -->
+  <!-- description should be shown. -->
+<!-- 
 - Above your list of monsters, you should have a form to create a new monster.
-  You should have fields for name, age, and description, and a 'Create Monster
-  Button'. When you click the button, the monster should be added to the list
+  name age description 
+  button create monster -->
+
+
+  <!-- You should have fields for name, age, and description, and a 'Create Monster
+  Button'. 
+   -->
+  
+  When you click the button, the monster should be added to the list
   and saved in the API.
+
+  saves to the api and adds to dom
+
+
+
 - At the end of the list of monsters, show a button. When clicked, the button
   should load the next 50 monsters and show them.
 
@@ -45,7 +58,7 @@ _page=[number] - offset your request for monsters to some page (must specify a l
 
 example:
 
-GET http://localhost:3000/monsters/?_limit=20&_page=3
+GET http://localhost:3000/monsters/?_limit=50&_page=1
 
 sample response:
 [
